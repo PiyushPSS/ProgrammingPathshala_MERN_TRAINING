@@ -1,18 +1,19 @@
 .parent {
     background-color: beige;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .child {
     background-color: rgb(43, 226, 89);
     border: 1px solid red;
-    width: 40px;
+    width: 100px;
 }
-
+/* 
 .search-box {
     flex-grow: 1;
-}
-
+} */
+/* 
 .cart {
     flex-grow: 1;
-}
+} */
