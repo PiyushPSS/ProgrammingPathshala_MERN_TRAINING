@@ -30,7 +30,7 @@
 /* the rem uses the dynamic size since it is helpful when you want to change the size of the text  */
 
 .child{
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .ButtonSubmit {
@@ -47,12 +47,30 @@
     margin: 0 auto;
     border-radius: 10px;
     width: fit-content;
-    padding: 200px;
+    padding: 20px 50px 20px 50px;
     border-color: beige;
     border-style: hidden;
 }
 
+.newclass {
+    background-color: black;
+    width: 500px;
+    height: fit-content;
+}
 
-/* 
 
-*/
+.parentc {
+    color: brown;
+
+    ol{
+        color: black;
+        background-color: aliceblue;
+    }
+
+    ul:first-of-type {
+        background-color: aqua;
+        li:first-child {
+            background-color: brown;
+        }
+    }
+}
