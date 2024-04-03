@@ -1,0 +1,58 @@
+/* div{
+    background-color: aqua;
+    box-sizing: border-box;
+} */
+
+.heading_class .helllo{
+    background-color: yellow;
+}
+
+/* *{
+    background-color: black;
+} */
+/* Using "*" selects the entire page. */
+
+/* Border goes from: Top right bottom left. */
+
+.image {
+    text-align: center;
+}
+/* Using Div class we can make the image come to centre. Since div is a block element while image is an inline element */
+
+/* External Internal Inline CSS */
+
+/* Width depends on parent when used in fontsize in em. */
+
+.parent{
+    font-size: 32px;
+}
+
+/* the rem uses the dynamic size since it is helpful when you want to change the size of the text  */
+
+.child{
+    font-size: 1em;
+}
+
+.ButtonSubmit {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 20px 50px 20px 50px;
+    border-color: beige;
+    border-style: hidden;
+}
+
+.ButtonSubmit2 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 200px;
+    border-color: beige;
+    border-style: hidden;
+}
+
+
+/* 
+
+*/
