@@ -1,0 +1,26 @@
+/* 
+HW
+Positioning in CSS
+Transitioning and animations in css.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+  
+#two {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: blue;
+  }

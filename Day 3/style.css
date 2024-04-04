@@ -1,0 +1,86 @@
+.parent {
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px; */
+    /* grid-template-columns: repeat(3, 50px); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Grid in fraction helps in making the space in fractions. That means. the tables will take the space according to the dimensions given. */
+    grid-template-rows: repeat(3, 50px);
+    
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: aqua;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+
+.child {
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    display: flex;
+}
+
+/* Grid display makes the display in the form of tables. */
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: blueviolet;
+}
+
+.menu {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+.parent2 {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.class1 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 50px;
+}
+
+.class2 {
+    background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 200px;
+}
+
+.class3 {
+    background-color: blueviolet;
+}
+
+.class4 {
+    background-color: brown;
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* 
+Homework.
+Grid area and row spam and column span. Minmax function in grid. Grid template. */
+
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* To dynamically change the columns in a page, we use auto-fit. */
