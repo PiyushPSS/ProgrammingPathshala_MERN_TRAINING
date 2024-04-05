@@ -42,7 +42,6 @@
     grid-column-end: 4;
 }
 
-
 .parent2 {
     display: grid;
     column-gap: 5px;
@@ -73,10 +72,6 @@
     grid-column-start: 1;
     grid-column-end: 4;
 }
-
-/* 
-Homework.
-Grid area and row spam and column span. Minmax function in grid. Grid template. */
 
 .parent3 {
     display: grid;
