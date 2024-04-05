@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+
+    <style>
+        div {
+            background-color: aquamarine;
+            padding: 50px;
+            border-radius: 40px;
+            min-width: fit-content;
+            width: 1fr;
+            height: 1fr;
+            min-height: fit-content;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form onsubmit="submitFunction(event)">
+            <label>First Name: </label>
+            <input type=" text" name="FirstName" placeholder="First Name" onkeyup="firstNameChange(event)"
+            id="firstname_id"><br><br>
+            <!-- by using event, it captures the data. -->
+
+            <label>Last Name: </label>
+            <input type="text" name="LastName" placeholder="Last Name"><br><br>
+
+            <label>Age: </label>
+            <input type="number" name="age" placeholder="Age">
+            <br><br>
+
+            <label>Hobbies</label><br>
+
+            <label for="singing">Singing</label>
+            <input type="checkbox" name="hobbies" value="Singing" id="singing">
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="hobbies" value="Reading" id="reading">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobbies" value="Dancing" id="dancing">
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

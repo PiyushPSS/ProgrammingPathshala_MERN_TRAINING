@@ -65,6 +65,7 @@ function forloop() {
         console.log(arr[i]);
     }
 
+    //This won't work.
     // for(i  = 0 ; i < 2; i++) { 
     //     console.log(obj[i]);
     // }
