@@ -1,10 +1,10 @@
 console.log("API STARTED");
 
-function getData() {
-    fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=e7df5bd37c0143a0bc27e3277f5ce294").then(res => res.json()).then(falana => {
-        addDataToUI(falana);
-    })
-}
+// function getData() {
+//     fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=e7df5bd37c0143a0bc27e3277f5ce294").then(res => res.json()).then(falana => {
+//         addDataToUI(falana);
+//     })
+// }
 
 function addDataToUI(falana) {
     const root = document.getElementById('root');
