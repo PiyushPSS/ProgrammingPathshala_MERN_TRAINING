@@ -15,7 +15,10 @@ console.log("END");
 //promise in js.
 //map function
 //filter in array/objects
-//reduce function
+//reduce function 
+//latency, response time and processing time.
+//IP ADDRESS, Mac address, Router, ISP, Internet, DNS, HTTPS, HTTP
+//await function
 
 //__________________________________________
 //how to create a new promise...
