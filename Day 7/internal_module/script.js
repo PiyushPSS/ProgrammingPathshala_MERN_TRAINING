@@ -56,7 +56,8 @@
 
 const http = require('http')
 
-const htmlTemplate = `<!DOCTYPE html>
+const htmlTemplate = `
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,11 +75,19 @@ const cardTemplate = `
     <div class='product-card'>
         <h3>_TITLE_</h3>
         <p>_PARAGRAPH_</p>
+        <img src = "X">
     </div>
 `
 
-const card1 = cardTemplate.replace('_TITLE_', 'Motorola Moto G36')
-        .replace("_PARAGRAPH_", "LOREM IPSUM")
+const fs = require('fs');
+const data = fs.readFileSync("./data.json", 'utf-8')
+
+const dataObj = JSON.parse(data);
+
+
+const card1 = cardTemplate.replace('_TITLE_', dataObj.products[0].title)
+        .replace("_PARAGRAPH_", dataObj.products[0].description)
+        .replace("X", dataObj.products[0].thumbnail)
 
 const page = htmlTemplate.replace('CHECK', card1);
 
