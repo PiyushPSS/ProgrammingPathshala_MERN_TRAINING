@@ -13,6 +13,8 @@
 // fs.writeFileSync('./logs.txt', 'Checking');
 
 
+//http://localhost:1400/
+
 
 // console.log(data.toString());
 // console.log('end');
@@ -80,16 +82,24 @@ const cardTemplate = `
 `
 
 const fs = require('fs');
+
 const data = fs.readFileSync("./data.json", 'utf-8')
 
 const dataObj = JSON.parse(data);
 
+const allCards = dataObj.products.map((elem) => {
+    const newCard = cardTemplate;
 
-const card1 = cardTemplate.replace('_TITLE_', dataObj.products[0].title)
-        .replace("_PARAGRAPH_", dataObj.products[0].description)
-        .replace("X", dataObj.products[0].thumbnail)
+    const card = newCard.replace('_TITLE_', elem.title)
+        .replace("_PARAGRAPH_", elem.description)
+        .replace("X", elem.thumbnail)
 
-const page = htmlTemplate.replace('CHECK', card1);
+    return card;
+})
+
+
+
+const page = htmlTemplate.replace('CHECK', allCards);
 
 const server = http.createServer((req, res) => {
     console.log("Received");
