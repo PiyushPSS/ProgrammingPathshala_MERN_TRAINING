@@ -14,27 +14,7 @@ id="productSearch">
 </form>
 `
 
-const cardTemplate = `
-    <div class="product_cart" style="background-color: #f2f2f2;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-
-    margin-bottom: 10px;
-    margin: auto;
-    width: 50%;
-    padding: 10px;">
-        <a href="LINK" style="text-decoration: none;
-        color: #333;">
-            <h1 style="margin-bottom: 5px;">TITLE</h1>
-        </a>
-        <p style="font-size: 14px;
-        margin-bottom: 10px;">DESC</p>
-        <img src="XXCS" alt="DECS">
-        <hr style="border: none;
-        border-top: 1px solid #ccc;
-        margin-top: 10px;">
-    </div>`;
+const cardTemplate = fs.readFileSync('./cardTemplate.html', 'utf-8');
 
 let result = [];
 
@@ -68,8 +48,6 @@ const server = http.createServer((_req, res) => {
         case '/product':
             let id = query.productId;
             let productSearch = query.productSearch;
-
-            console.log(id + productSearch);
             
             res.end(`
                 <div>
