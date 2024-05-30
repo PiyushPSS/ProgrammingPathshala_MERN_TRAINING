@@ -2,20 +2,40 @@ const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema(
     {
-        title: String,
-        price: Number
+        title: {
+            type: String,
+            unique: true,
+            required: true
+        },
+        price: {
+            type: Number,
+            required: true
+        },
+        description: String,
+        images: String,
+        createdAt: {
+            type: Date,
+            default: new Date()
+        },
+        updatedAt: {
+            type: Date,
+            default: new Date()
+        }
     }
 );
 
 const productModel = mongoose.model('products', productSchema);
 
-const testProduct = new productModel({
-    title: 'Test Product',
-    price: 100
-});
+module.exports = productModel;
 
-//schema -> object -> model
+// const testProduct = new productModel({
+//     title: 'Test Product',
+//     price: 100
+// });
 
-testProduct.save().then((res) => {
-    console.log(res)
-})
+// //schema -> object -> model
+
+// testProduct.save().then((res) => {
+//     console.log(res)
+// })
+

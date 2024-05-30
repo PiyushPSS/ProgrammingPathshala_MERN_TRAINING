@@ -5,6 +5,8 @@ const productRouter = require('./controllers/productRoute.js');
 
 const app = express();
 
+app.use(express.json());
+
 app.use('/api/products', productRouter);
 
 const url = 'mongodb+srv://$_USERNAME_$:$_PASSWORD_$@cluster1.pyq5ppt.mongodb.net/$_DBNAME_$?retryWrites=true&w=majority&appName=Cluster1';

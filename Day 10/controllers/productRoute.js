@@ -5,6 +5,7 @@ const productsController = require('./productsController.js')
 const productRouter = express.Router();
 
 productRouter.route('/')
-    .get(productsController.getAllProducts);
+    .get(productsController.getAllProducts)
+    .post(productsController.addProduct);
 
     module.exports = productRouter;
