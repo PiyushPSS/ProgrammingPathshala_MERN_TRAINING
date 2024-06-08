@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "name": "day14",
+  "version": "1.0.0",
+  "description": "make 3 basic files --> index.html --> styles.css --> app.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
